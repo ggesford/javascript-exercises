@@ -1,7 +1,9 @@
-const convertToCelsius = function() {
-};
+//°F = (x - 32) * ⁠5/9⁠ °C
+const convertToCelsius = function(tempF) {
 
-const convertToFahrenheit = function() {
+};
+//°C ≘ (x × ⁠  9 /  5  ⁠ + 32) °F
+const convertToFahrenheit = function(tempC) {
 };
 
 // Do not edit below this line
