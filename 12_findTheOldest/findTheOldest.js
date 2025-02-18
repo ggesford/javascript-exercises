@@ -1,6 +1,10 @@
-const findTheOldest = arr => arr
-                                .map(person => person.age = person.yearOfDeath - person.yearOfBirth)
-                                .sort((a, b) => b.age - a.age)[0];
+const findTheOldest = arr => 
+    arr.sort((a, b) => {
+        const currentYear = new Date().getFullYear();
+        const ageA = (a.yearOfDeath || currentYear) - a.yearOfBirth;
+        const ageB = (b.yearOfDeath || currentYear) - b.yearOfBirth;
+        return ageB - ageA;
+    })[0];
 
 
 // Do not edit below this line
